@@ -56,3 +56,15 @@ else {
     var whichImage = document.querySelector(".img2");
     whichImage.setAttribute("src", "./dice6.png");
 }
+
+// Change the h1 based on the outcome of the dice roll
+
+if (randomNumberOne > randomNumberTwo) {
+    document.querySelector("h1").innerHTML = "&#128681	Player 1 Wins!";
+}
+else if (randomNumberOne < randomNumberTwo) {
+    document.querySelector("h1").innerHTML = "Player 2 Wins! &#128681";
+}
+else if (randomNumberOne === randomNumberTwo) {
+    document.querySelector("h1").innerHTML = "Draw!";
+}
